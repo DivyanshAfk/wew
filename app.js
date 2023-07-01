@@ -24,22 +24,17 @@ const url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+
     response.on("data", function (data) {
       const tits = JSON.parse(data);
       const icon = tits.weather[0].icon;
-      console.log("The temperature is : " + tits.main.temp);
-      // console.log(JSON.parse(data));
-      console.log("The weather status is :" + tits.weather[0].description);
+      // console.log("The temperature is : " + tits.main.temp);
+      // // console.log(JSON.parse(data));
+      // console.log("The weather status is :" + tits.weather[0].description);
       res.write(" <h1>The Temperature in "+city+" is : "+tits.main.temp +"<\h1>");
       res.write("<h2>The weather condition is currently : "+ tits.weather[0].description + "<\h2>")
       const imageURL = "https://openweathermap.org/img/wn/"+icon+"@2x.png"
       res.write("<img src ="+imageURL+">")
     });
   });
-  
+
 });
-
-
-
-
-
 
 app.listen(port, function () {
   console.log("The server is running at " + port);
