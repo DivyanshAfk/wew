@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wether   </title>
+    <title>wether </title>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(177, 207, 197);
+            border-radius: 2%;
+        }
+        .city{
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .vro {
+            background-color: rgb(210, 223, 219);
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10%;
+            margin:10%;
+            padding: 3%;
+        }
+        .h1-container{
+            
+    
+            text-align: center;
+            background-color: rgb(247, 247, 247);
+        }
+        label{
+            font-size: large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+            }
+            button{
+                border-radius: 50%;
+                aspect-ratio: 1;
+            }
+            .inp{
+                padding-bottom:10px ;   
+            }
+            .btn{
+                text-align: center;
+              
+            }
+    </style>
+
 </head>
+
 <body>
-    <form action="/" method="post">
-        <label for="cityInput">city Name : </label>
-        <input type="text" name="cityName" id="cityInput">
-        <button type="submit"   >Ello</button>
-    </form>
+    <div class="h1-container">
+    <h1>
+        Weather Nigga
+        
+    </h1>
+</div>
+    <div class="container">
+        
+        <div class="vro">
+
+            <form action="/" method="post">
+
+                <div class="city">
+                    <label for="cityInput">City Name  </label>
+                </div>
+
+                <div class="inp">
+                    <input type="text" name="cityName" id="cityInput">
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Ello</button>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
 
 </body>
+
 </html>
